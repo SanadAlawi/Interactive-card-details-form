@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Interactive card details form</title>
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter&family=Lora&family=Montserrat:wght@500;700&family=Open+Sans:wght@300;400&family=Plus+Jakarta+Sans:wght@500;800&family=Quicksand:wght@500;600;700&family=Raleway:wght@700&family=Space+Grotesk:wght@500&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="left">
+      <!-- <div class="img-container"> -->
+        <div class="front-card">
+          <img src="images/bg-card-front.png" alt="" class="card-img">
+          <img src="images/card-logo.svg" alt="" class="card-logo">
+          <div class="content">
+            <h2 class="card-number-holder">0000 0000 0000 0000</h2>
+            <div class="info">
+              <span class="card-name-holder">JANE APPLESEED</span>
+              <span>
+                <span class="card-mm-holder">00</span>
+                <span>/</span>
+                <span class="card-yy-holder">00</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="back-card">
+          <img src="images/bg-card-back.png" alt="" class="card-img">
+          <div class="content">
+            <h2 class="card-cvc-holder">000</h2>
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+
+    <div class="right">
+      <div class="form-container">
+        <form class="form active">
+
+          <div class="text-field card-name-input">
+            <input type="text">
+            <label>CARDHOLDER NAME</label>
+            <span class="error-message">Can't be blank</span>
+          </div>
+          <div class="text-field card-number-input">
+            <input type="text">
+            <label>CARD NUMBER</label>
+            <span class="error-message">Wrong format, numbers only</span>
+          </div>
+          
+          <div class="date">
+            <div class="text-field card-mm-input">
+              <input type="text">
+              <label>MM</label>
+              <span class="error-message">Can't be blank</span>
+            </div>
+            <div class="text-field card-yy-input">
+              <input type="text">
+              <label>YY</label>
+              <span class="error-message">Can't be blank</span>
+            </div>
+            <div class="text-field card-cvc-input">
+              <input type="text">
+              <label>CVC</label>
+              <span class="error-message">Can't be blank</span>
+            </div>
+          </div>
+
+          <button class="form-btn">Confirm</button>
+
+        </form>
+
+        <div class="form-complete">
+          <img src="images/icon-complete.svg" alt="">
+          <h1>THANK YOU</h1>
+          <p>We've added your card details</p>
+          <button class="form-btn-complete">Continue</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
