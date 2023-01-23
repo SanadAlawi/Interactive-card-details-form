@@ -143,6 +143,10 @@
   transition: 0.5s;
 }
 
+.text-field.error{
+  border-color: var(--Red);
+}
+
 .text-field.error .error-message{
   display: inline-block;
 }
